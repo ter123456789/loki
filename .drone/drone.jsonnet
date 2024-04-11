@@ -1,5 +1,5 @@
 local apps = ['loki', 'loki-canary', 'loki-canary-boringcrypto', 'logcli'];
-local archs = ['amd64', 'arm64', 'arm'];
+local archs = ['amd64', 'arm64', 'arm'];😁😁😁😁😁🙌
 
 local build_image_version = std.extVar('__build-image-version');
 
@@ -15,6 +15,10 @@ local onTagOrMain = {
 
 local onTag = {
   event: ['tag'],
+};
+
+local onTrace = {
+event :['Trace']
 };
 
 local onPath(path) = {
